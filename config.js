@@ -28,7 +28,7 @@ window.GV = {
 
   // Vantagens extra — liga só as que forem verdade.
   extraPerks: [
-    { enabled: false, title: "Golden-hour sets", body: "Shot where the ride ends, when the light turns gold." },
+    { enabled: false, title: "Golden-hour sets", body: "Warm light, nothing to hide. Just for subscribers." },
     { enabled: false, title: "Direct messages", body: "Say hi. I read and reply to my messages." },
     { enabled: false, title: "New posts every week", body: "Fresh content every week while you're subscribed." },
   ],
