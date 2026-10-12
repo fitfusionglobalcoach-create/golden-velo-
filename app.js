@@ -31,9 +31,9 @@
 
   /* ── Frase de boas-vindas por rede ── */
   var lines = {
-    instagram: "Came from Instagram? This is the part I don't post there.",
-    tiktok: "Came from TikTok? This is the part I don't post there.",
-    x: "Came from X? Welcome to the full ride.",
+    instagram: "Came from Instagram? Here's what they won't let me post.",
+    tiktok: "Came from TikTok? This is the part the algorithm hides.",
+    x: "Came from X? Welcome in.",
   };
   if (lines[src]) { var sl = $("#src-line"); sl.textContent = lines[src]; sl.classList.add("on"); }
 

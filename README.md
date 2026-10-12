@@ -8,8 +8,8 @@ Site estático: HTML + CSS + um pouco de JavaScript, sem framework e sem build. 
 
 - Verificação de idade (18+) antes de mostrar a página, lembrada só enquanto o separador estiver aberto
 - Topo com foto, preço ($14.99/mês) e botão "Subscribe on OnlyFans" visível logo no primeiro ecrã
-- Secções: o ciclista (ex-profissional em Espanha), o que inclui, pré-visualizações (uma pública + duas trancadas),
-  preço, perguntas frequentes e chamada final
+- Secções: apresentação, o que inclui, pré-visualizações (uma pública + duas trancadas), preço,
+  perguntas frequentes e chamada final
 - Barra fixa "Subscribe" no telemóvel depois de passares o primeiro botão
 - Aviso para quem abre dentro do Instagram/TikTok ("abre no browser") com botão para copiar o link
 - Sem nudez nem texto explícito na página (o conteúdo explícito fica só no OnlyFans)
