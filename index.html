@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://onlyfans.com">
-<link rel="preload" as="image" type="image/avif" imagesrcset="/img/hero-640.avif 640w, /img/hero-960.avif 960w, /img/hero-1320.avif 1320w" imagesizes="(min-width: 960px) 46vw, 100vw" fetchpriority="high">
+<link rel="preload" as="image" imagesrcset="/.netlify/images?url=/img/hero.jpg&amp;w=640&amp;q=72 640w, /.netlify/images?url=/img/hero.jpg&amp;w=960&amp;q=72 960w, /.netlify/images?url=/img/hero.jpg&amp;w=1320&amp;q=72 1320w" imagesizes="(min-width: 960px) 46vw, 100vw" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-latin-400-normal.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-latin-400-italic.woff2" crossorigin>
 <script>
@@ -89,7 +89,7 @@ html.gate-open body{overflow:hidden}
 /* ── Hero ── */
 .hero{position:relative}
 .hero-media{position:relative;height:min(74svh,128vw);min-height:420px;overflow:hidden}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
 .hero-media::before{content:"";position:absolute;inset:0 0 auto;height:140px;z-index:1;background:linear-gradient(rgba(15,11,8,.6),rgba(15,11,8,0))}
 .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,11,8,0) 32%,rgba(15,11,8,.62) 52%,rgba(15,11,8,.9) 78%,var(--ink) 100%)}
 .hero-copy{position:relative;z-index:2;margin-top:-34svh;padding-bottom:28px}
@@ -192,7 +192,7 @@ html.gate-open body{overflow:hidden}
 
 /* ── Final ── */
 .finish{position:relative;margin-top:72px;min-height:88svh;display:flex;align-items:flex-end;overflow:hidden}
-.finish picture,.finish img{position:absolute;inset:0;width:100%;height:100%}
+.finish img{position:absolute;inset:0;width:100%;height:100%}
 .finish img{object-fit:cover;object-position:50% 20%}
 .finish::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,11,8,.1) 20%,rgba(15,11,8,.88) 66%,var(--ink) 100%)}
 .finish .wrap{position:relative;z-index:1;padding-bottom:40px}
@@ -238,7 +238,7 @@ footer p+p{margin-top:8px}
   .sticky{display:none}
   footer{padding-bottom:40px}
   .finish{align-items:center}
-  .finish picture{left:42%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 30%);mask-image:linear-gradient(90deg,transparent,#000 30%)}
+  .finish img{left:42%;width:58%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 30%);mask-image:linear-gradient(90deg,transparent,#000 30%)}
   .finish::after{background:linear-gradient(90deg,var(--ink) 30%,rgba(15,11,8,0) 70%)}
   .finish .wrap{margin-left:max(40px,calc((100vw - 1120px)/2));margin-right:auto;max-width:560px;padding-bottom:0}
 }
@@ -270,11 +270,7 @@ footer p+p{margin-top:8px}
     </header>
 
     <div class="hero-media">
-      <picture>
-        <source type="image/avif" srcset="/img/hero-640.avif 640w, /img/hero-960.avif 960w, /img/hero-1320.avif 1320w" sizes="(min-width: 960px) 46vw, 100vw">
-        <source type="image/webp" srcset="/img/hero-640.webp 640w, /img/hero-960.webp 960w, /img/hero-1320.webp 1320w" sizes="(min-width: 960px) 46vw, 100vw">
-        <img src="/img/hero-960.jpg" srcset="/img/hero-640.jpg 640w, /img/hero-960.jpg 960w, /img/hero-1320.jpg 1320w" sizes="(min-width: 960px) 46vw, 100vw" width="1320" height="1753" alt="Golden Velo with round glasses and a moustache, shirtless against a warm golden backdrop" fetchpriority="high">
-      </picture>
+      <img src="/.netlify/images?url=/img/hero.jpg&amp;w=960&amp;q=72" srcset="/.netlify/images?url=/img/hero.jpg&amp;w=640&amp;q=72 640w, /.netlify/images?url=/img/hero.jpg&amp;w=960&amp;q=72 960w, /.netlify/images?url=/img/hero.jpg&amp;w=1320&amp;q=72 1320w" sizes="(min-width: 960px) 46vw, 100vw" width="1500" height="2000" fetchpriority="high" alt="Golden Velo with round glasses, shirtless, looking at the camera" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/img/hero-960.jpg'">
     </div>
 
     <div class="hero-copy">
@@ -314,11 +310,7 @@ footer p+p{margin-top:8px}
     <div class="stage" aria-hidden="true"><p class="kicker">01 · Me</p><svg viewBox="0 0 300 28" preserveAspectRatio="none"><path d="M0 14 L300 14" fill="none" stroke="url(#gv-g)" stroke-width="1.5" vector-effect="non-scaling-stroke"/><defs><linearGradient id="gv-g" x1="0" x2="1"><stop offset="0" stop-color="#EE7A33"/><stop offset=".55" stop-color="#F2B544"/><stop offset="1" stop-color="#F9D9A6"/></linearGradient></defs></svg></div>
     <section class="rider" aria-labelledby="rider-title">
       <figure>
-        <picture>
-          <source type="image/avif" srcset="/img/abs-480.avif 480w, /img/abs-776.avif 776w" sizes="(min-width: 960px) 520px, 100vw">
-          <source type="image/webp" srcset="/img/abs-480.webp 480w, /img/abs-776.webp 776w" sizes="(min-width: 960px) 520px, 100vw">
-          <img src="/img/abs-776.jpg" srcset="/img/abs-480.jpg 480w, /img/abs-776.jpg 776w" sizes="(min-width: 960px) 520px, 100vw" width="776" height="970" loading="lazy" decoding="async" alt="Golden Velo shirtless, one white bib strap over his shoulder, looking at the camera">
-        </picture>
+        <img src="/.netlify/images?url=/img/me.jpg&amp;w=800&amp;q=72" srcset="/.netlify/images?url=/img/me.jpg&amp;w=480&amp;q=72 480w, /.netlify/images?url=/img/me.jpg&amp;w=800&amp;q=72 800w" sizes="(min-width: 960px) 520px, 100vw" width="1500" height="2000" loading="lazy" decoding="async" alt="Golden Velo sitting shirtless by the window" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/img/abs-776.jpg'">
         <figcaption>Just for you.</figcaption>
       </figure>
       <div>
@@ -350,11 +342,7 @@ footer p+p{margin-top:8px}
       <h2 id="prev-title" style="margin-bottom:22px">A glimpse. <em class="gold-text">The rest is for subscribers.</em></h2>
       <div class="previews">
         <div class="tile">
-          <picture>
-            <source type="image/avif" srcset="/img/mirror-480.avif 480w, /img/mirror-900.avif 900w" sizes="(min-width: 960px) 340px, 78vw">
-            <source type="image/webp" srcset="/img/mirror-480.webp 480w, /img/mirror-900.webp 900w" sizes="(min-width: 960px) 340px, 78vw">
-            <img src="/img/mirror-480.jpg" srcset="/img/mirror-480.jpg 480w, /img/mirror-900.jpg 900w" sizes="(min-width: 960px) 340px, 78vw" width="900" height="1125" loading="lazy" decoding="async" alt="Mirror selfie of Golden Velo, shirtless, at dusk">
-          </picture>
+          <img src="/.netlify/images?url=/img/preview.jpg&amp;w=900&amp;q=72" srcset="/.netlify/images?url=/img/preview.jpg&amp;w=480&amp;q=72 480w, /.netlify/images?url=/img/preview.jpg&amp;w=900&amp;q=72 900w" sizes="(min-width: 960px) 340px, 78vw" width="1500" height="2000" loading="lazy" decoding="async" alt="Golden Velo lying on white sheets in soft light" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/img/mirror-480.jpg'">
           <span class="chip">Public</span>
           <span class="cap">Evening light. Door locked.</span>
         </div>
@@ -417,11 +405,7 @@ footer p+p{margin-top:8px}
   </div>
 
   <section class="finish" id="finish" aria-labelledby="finish-title">
-    <picture>
-      <source type="image/avif" srcset="/img/finish-640.avif 640w, /img/finish-960.avif 960w" sizes="(min-width: 960px) 58vw, 100vw">
-      <source type="image/webp" srcset="/img/finish-640.webp 640w, /img/finish-960.webp 960w" sizes="(min-width: 960px) 58vw, 100vw">
-      <img src="/img/finish-640.jpg" srcset="/img/finish-640.jpg 640w, /img/finish-960.jpg 960w" sizes="(min-width: 960px) 58vw, 100vw" width="960" height="1200" loading="lazy" decoding="async" alt="">
-    </picture>
+    <img src="/.netlify/images?url=/img/finish.jpg&amp;w=960&amp;q=72" srcset="/.netlify/images?url=/img/finish.jpg&amp;w=640&amp;q=72 640w, /.netlify/images?url=/img/finish.jpg&amp;w=960&amp;q=72 960w" sizes="(min-width: 960px) 58vw, 100vw" width="1500" height="2000" loading="lazy" decoding="async" alt="" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/img/finish-640.jpg'">
     <div class="wrap narrow">
       <p class="kicker">Finish line</p>
       <h2 id="finish-title">The door's open. <em class="gold-text">Don't keep me waiting.</em></h2>

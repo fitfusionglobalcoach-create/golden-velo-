@@ -50,6 +50,22 @@ Este repositório (`golden-velo-`) está ligado à Netlify:
 Cada alteração enviada para o `main` é publicada automaticamente.
 Se usares outro nome de projeto/domínio, troca `https://golden-velo.netlify.app` em `index.html` (meta `og:image`).
 
+## Trocar as fotos (sem mexer no código)
+
+A página procura estas 4 fotos na pasta `img/`. Basta carregá-las no GitHub com **exatamente** estes nomes
+(GitHub → `img` → **Add file → Upload files**). A Netlify redimensiona e otimiza cada foto sozinha.
+Enquanto uma foto não existir, a página mostra a anterior.
+
+| Nome do ficheiro | Onde aparece |
+| --- | --- |
+| `img/hero.jpg` | Foto grande do topo |
+| `img/me.jpg` | Secção "01 · Me" |
+| `img/preview.jpg` | Pré-visualização pública (secção "03 · Previews") |
+| `img/finish.jpg` | Fundo da chamada final |
+
+⚠️ **Antes de carregar, tira a localização das fotos** (no iPhone: Partilhar → Opções → desligar Localização).
+O ficheiro original fica acessível publicamente.
+
 ## Ficheiros
 
 ```
