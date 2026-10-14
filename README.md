@@ -22,6 +22,7 @@ Site estático: HTML + CSS + um pouco de JavaScript, sem framework e sem build. 
 | `price` | Texto do preço em toda a página |
 | `trackingLinks` | Links de rastreio do OnlyFans por rede (ver abaixo) |
 | `promo` | Promoção ou teste grátis **real** criado no OnlyFans (desligado por defeito) |
+| `altLinks` | Outras plataformas (ex.: Unlockt). Aparece um botão secundário por baixo dos botões do OnlyFans |
 | `extraPerks` | Vantagens extra — liga (`enabled: true`) só as que forem verdade |
 | `socials` | Contas do Golden Velo (a secção "Follow" só aparece se preencheres) |
 

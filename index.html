@@ -65,6 +65,10 @@ p{margin:0}
 @keyframes sheen{to{transform:translateX(120%)}}
 .cta--xl{min-height:68px;font-size:20px}
 .micro{margin-top:10px;font-size:13px;color:var(--sand);text-align:center}
+.alt{display:none;margin-top:14px;text-align:center}
+.alt.on{display:block}
+.alt a{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;padding:0 20px;border-radius:999px;border:1px solid rgba(242,181,68,.45);color:var(--cream);text-decoration:none;font:600 15px/1.2 var(--sans);text-align:center}
+.alt a:hover,.alt a:focus-visible{border-color:var(--gold);color:var(--gold)}
 .textlink{display:inline-flex;align-items:center;gap:6px;min-height:44px;color:var(--gold);text-underline-offset:4px;font-weight:600}
 
 /* ── Age gate ── */
@@ -276,7 +280,7 @@ footer p+p{margin-top:8px}
     <div class="hero-copy">
       <div class="wrap">
         <p class="src-line" id="src-line"></p>
-        <p class="kicker">18+ · Exclusive on OnlyFans</p>
+        <p class="kicker">18+ · Uncensored on OnlyFans</p>
         <h1 id="hero-title" tabindex="-1">Come a little <em class="gold-text">closer.</em></h1>
         <p class="lead">Glasses on, everything else optional. Instagram gets the preview. The uncensored side of me is for subscribers only.</p>
 
@@ -289,6 +293,7 @@ footer p+p{margin-top:8px}
           Subscribe on OnlyFans<small><span data-price>$14.99</span>/mo · cancel anytime</small>
         </a>
         <p class="micro">Opens onlyfans.com/goldenvelo · 18+ only</p>
+        <p class="alt" data-alt="hero"></p>
 
         <div class="inapp" id="inapp" role="note">
           <p id="inapp-text">Viewing this inside an app? If OnlyFans won't let you log in or pay here, open this page in Safari or Chrome.</p>
@@ -387,6 +392,7 @@ footer p+p{margin-top:8px}
         <p class="promo" id="promo"></p>
         <a class="cta" id="price-cta" data-cta data-pos="pricing" href="https://onlyfans.com/goldenvelo">Subscribe on OnlyFans<small><span data-price>$14.99</span>/mo · cancel anytime</small></a>
         <p class="micro">You'll continue to onlyfans.com/goldenvelo</p>
+        <p class="alt" data-alt="pricing"></p>
       </div>
     </section>
 
@@ -411,6 +417,7 @@ footer p+p{margin-top:8px}
       <h2 id="finish-title">The door's open. <em class="gold-text">Don't keep me waiting.</em></h2>
       <a class="cta cta--xl" data-cta data-pos="final" href="https://onlyfans.com/goldenvelo">Subscribe on OnlyFans<small><span data-price>$14.99</span>/mo · cancel anytime</small></a>
       <p class="micro">Opens onlyfans.com/goldenvelo · 18+ only</p>
+      <p class="alt" data-alt="final"></p>
     </div>
   </section>
 
@@ -423,7 +430,7 @@ footer p+p{margin-top:8px}
 <footer id="footer">
   <div class="mono" aria-hidden="true">GV</div>
   <p><strong>Golden Velo · 18+ only</strong></p>
-  <p>This page contains no explicit content. Subscriptions are sold and processed by OnlyFans. Golden Velo is an independent creator and is not affiliated with or endorsed by OnlyFans.</p>
+  <p>This page contains no explicit content. Purchases are sold and processed by the platform you choose (OnlyFans or Unlockt). Golden Velo is an independent creator and is not affiliated with or endorsed by either platform.</p>
   <p>All persons depicted are 18 or older.</p>
   <p>No cookies, no trackers. Your age confirmation is stored only for this browser tab.</p>
   <p>© <span id="year">2026</span> Golden Velo</p>

@@ -26,6 +26,12 @@ window.GV = {
   // Ex.: { enabled: true, label: "Free for 7 days", url: "https://onlyfans.com/goldenvelo/trial/xxxx" }
   promo: { enabled: false, label: "", url: "" },
 
+  // Outras plataformas (botão secundário "também no …" por baixo dos botões do OnlyFans).
+  // Só são aceites links https de plataformas conhecidas (lista em app.js). enabled: false esconde.
+  altLinks: [
+    { enabled: true, name: "Unlockt", text: "Or unlock single sets on Unlockt", url: "https://unlockt.me/goldencyclist" },
+  ],
+
   // Vantagens extra — liga só as que forem verdade.
   extraPerks: [
     { enabled: false, title: "Golden-hour sets", body: "Warm light, nothing to hide. Just for subscribers." },

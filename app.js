@@ -26,6 +26,23 @@
   var priceHref = C.promo && C.promo.enabled && OF.test(C.promo.url || "") ? C.promo.url : href;
   $$("[data-cta]").forEach(function (a) { a.href = a.dataset.pos === "pricing" ? priceHref : href; });
 
+  /* ── Outras plataformas (só links https de plataformas conhecidas) ── */
+  var ALT_OK = /^https:\/\/(www\.)?unlockt\.me\/[\w.-]+\/?$/;
+  var alts = (C.altLinks || []).filter(function (l) { return l && l.enabled && ALT_OK.test(l.url || ""); });
+  if (alts.length) {
+    $$("[data-alt]").forEach(function (box) {
+      alts.forEach(function (l) {
+        var a = document.createElement("a");
+        a.href = l.url; a.rel = "noopener";
+        a.dataset.pos = "alt-" + (box.dataset.alt || "");
+        a.innerHTML = "<span></span> <span aria-hidden=\"true\">→</span>";
+        a.firstChild.textContent = l.text || ("Also on " + l.name);
+        box.appendChild(a);
+      });
+      box.classList.add("on");
+    });
+  }
+
   /* ── Preço ── */
   if (C.price) $$("[data-price]").forEach(function (el) { el.textContent = C.price; });
 
